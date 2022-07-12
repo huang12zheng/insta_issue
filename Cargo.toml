@@ -1,8 +1,13 @@
 [package]
-authors = ["Diego.Pacheco"]
-edition = "2018"
+edition = "2021"
 name = "main"
 version = "1.0.0"
 
 [dependencies]
+async-trait = "0.1.56"
 cucumber = "0.13.0"
+tokio = {version = "^1.19.2", features = ["full"]}
+
+[[test]]
+harness = false # allows Cucumber to print output instead of libtest
+name = "main"

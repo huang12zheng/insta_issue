@@ -47,5 +47,5 @@ async fn is_full(w: &mut World) {
 
 #[tokio::main]
 async fn main() {
-    World::run("tests/features/readme").await;
+    World::run("features").await;
 }
