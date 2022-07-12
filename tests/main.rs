@@ -43,6 +43,7 @@ async fn is_full(w: &mut World) {
     sleep(Duration::from_secs(2)).await;
 
     assert_eq!(w.capacity, 3, "{} isn't full!", w.user.as_ref().unwrap());
+    insta::assert_debug_snapshot!(w);
 }
 
 #[tokio::main]

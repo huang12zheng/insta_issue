@@ -1,0 +1,11 @@
+---
+source: tests/main.rs
+assertion_line: 46
+expression: w
+---
+World {
+    user: Some(
+        "Alice",
+    ),
+    capacity: 3,
+}
